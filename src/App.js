@@ -12,8 +12,6 @@ const client = new ApolloClient({
   uri: 'http://localhost:8080/',
 });
 
-
-
 function App(props) {
 
   return (

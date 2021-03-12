@@ -53,11 +53,8 @@ export default function Profile(props) {
     backgroundRepeat: 'no-repeat',
     height: {height},
     fontFamily: "Comfortaa",
-    
-
+    fontSize:"1vw"
   };
-
-
 
   //overflow-x css property deals with extra whitespace produced by "left" property here
   return (
@@ -132,11 +129,10 @@ export default function Profile(props) {
           </Card> */}
           <div style={{ width: '100%', height: '100%'}}>
           <Image style={{ width: '40%', height: '95%'}} src={andy} roundedCircle/>
-            <div class="flex-wrap" style={{color:"white", position:"relative"}}>
-              <p style={{fontSize:"2vw"}}> Andy Luo</p>
+            <div class="flex-wrap" style={{color:"white", margin:"10%", marginTop:"-0.6%"}}>
+              <p style={{fontSize:"2vw"}}>Andy Luo</p>
             </div>
           </div>
-
           <Container style={{ position:'relative'}}>
           <Row>
             <Col xs={12} md={8}>
