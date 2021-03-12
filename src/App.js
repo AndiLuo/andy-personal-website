@@ -6,12 +6,10 @@ import store from './store/';
 import { Route, BrowserRouter } from 'react-router-dom';
 import "./components/styles.css"
 
-import LandingPage from './components/landingPage'
-import createPinForm from '../src/components/createPinForm'
 import Profile from './components/profile'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:8080/graphql/pins',
+  uri: 'http://localhost:8080/',
 });
 
 
@@ -26,7 +24,6 @@ function App(props) {
       <Provider store = {store}>
         <BrowserRouter>
             <Route exact path ="/" component={Profile}/>
-            <Route path ="/createPin" component={createPinForm}/>
         </BrowserRouter>
       </Provider>
     </ApolloProvider>
