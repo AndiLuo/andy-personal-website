@@ -3,13 +3,6 @@ import React, { useState, useLayoutEffect } from "react";
 import Button from "@material-ui/core/Button";
 import {
   Jumbotron,
-  Card,
-  Form,
-  Navbar,
-  Nav,
-  NavDropdown,
-  FormControl,
-  Carousel,
   Container,
   Row,
   Col,
@@ -36,19 +29,12 @@ function useWindowSize() {
 export default function Profile(props) {
   const [width, height] = useWindowSize()
 
-  const images = {
-    node: require('./images/node.png'),
-    react: require('./images/react.png')
-  }
-
-
-
   const jumboStyle = {
     color: "white",
     backgroundImage: `url(${mountain}) `,
     //backgroundattachment: fixed = image scroll dissapears as you scroll!
     backgroundAttachment: 'fixed',
-    backgroundSize: "autor",
+    backgroundSize: "auto",
     backgroundPosition: "center center",
     backgroundRepeat: 'no-repeat',
     height: "100vh",
@@ -68,7 +54,6 @@ export default function Profile(props) {
     alignItems: "center",
     borderTop: "2px solid",
     color: "white"
-
   }
 
   const flexOne = {
@@ -97,34 +82,6 @@ export default function Profile(props) {
       />
       <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet"></link>
       <div>
-        {/* <div>
-        <Navbar
-          bg="transparent"
-          fixed="top"
-          expand="md"
-          scrolling
-          collapseOnSelect
-          style={{
-            fontFamily: "Consolas",
-            fontSize:"1vw",
-            color:"White"
-          }}
-        >
-
-          <Navbar.Toggle aria-controls="responsive-navabar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <ul>
-              <Nav className="ml-auto">
-                <NavDropdown style={{ fontSize: "150%", top: "10px" }} class="navbar-nav ml-auto" title='Projects'>
-                  <NavDropdown.Item style={{fontSize: "1.2vw"}}>
-                    MERN Card Database
-                </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </ul>
-          </Navbar.Collapse>
-        </Navbar>
-      </div> */}
         <Jumbotron style={jumboStyle}>
           <br />
           <br />
@@ -174,31 +131,6 @@ export default function Profile(props) {
           </div>
         </div>
       </div>
-
-
-      {/* <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src= {stars}
-              alt="First slide"
-            />
-          </Carousel.Item>
-        </Carousel> */}
-      {/* <Card border="primary" style={{ width: '20%', height: '20%', left:'5%', backgroundColor:'black'}} bg="Secondary">
-            <Card.Img
-              variant="top"
-              style={{ width: {width}, height: {height}}}
-              src={andy}
-              roundedCircle
-            />
-            <Card.Body style={{ color: "white", fontSize: "100%"  }}>
-              <Card.Title>Andy Luo</Card.Title>
-              <Card.Text>
-                Hey there! I'm a recent graduate from BCITs Comp Sci program. I was educated in many different fields which range from development, cloud services, Agile methadologies and VMs.
-              </Card.Text>
-            </Card.Body>
-          </Card> */}
     <br/>
     <br/>
     <div style={flexOne}>
@@ -207,7 +139,7 @@ export default function Profile(props) {
       </div>
     </div>
     <br/>
-    <Row style={{color:"white", fontFamily:"Consolas"}}>
+    <Row style={{color:"white", fontFamily:"Consolas"}} className="align-items-center">
       <Col xs={6} md={1}>
       </Col>
       <Col xs={6} md={4}>
@@ -217,6 +149,11 @@ export default function Profile(props) {
         Title, Author, ImageURL, description and dimensions. After form submission, the data is logged in to the Mongo database and should be viewable/searchable 
         on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing.
         </p>
+      </Col>
+      <Col xs={6} md={3}>
+      </Col>
+      <Col xsOffSet={2} xs={2}>
+        Link to Project Demo
       </Col>
     </Row>
     </div>
