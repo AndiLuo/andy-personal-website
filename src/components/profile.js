@@ -139,6 +139,7 @@ export default function Profile(props) {
       </div>
     </div>
     <br/>
+    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
     <Row style={{color:"white", fontFamily:"Consolas"}} className="align-items-center">
       <Col xs={6} md={1}>
       </Col>
@@ -149,13 +150,21 @@ export default function Profile(props) {
         Title, Author, ImageURL, description and dimensions. After form submission, the data is logged in to the Mongo database and should be viewable/searchable 
         on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing.
         </p>
+        <a style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
+          Link to project!
+        </a>
       </Col>
-      <Col xs={6} md={3}>
-      </Col>
-      <Col xsOffSet={2} xs={2}>
-        Link to Project Demo
+      <Col md={1}></Col>
+      <Col xsOffSet={2} xs={1}>
+        <img src={require('./images/mern.gif')} style={{ width: '500%', height: '1000%'}}/>
       </Col>
     </Row>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
     </div>
   );
 }
