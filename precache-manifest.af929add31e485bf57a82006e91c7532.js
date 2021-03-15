@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d15d018444db5f66bdd49fdf6c329406",
+    "revision": "e9f877c46b5d689912d907459ca0c9f5",
     "url": "/andy-personal-website/index.html"
   },
   {
-    "revision": "16d726b9f7bf35934ee9",
+    "revision": "b3bf0eaa29822c45ce5b",
     "url": "/andy-personal-website/static/css/main.2ce6b4bb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andy-personal-website/static/js/2.c62c6f7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "16d726b9f7bf35934ee9",
-    "url": "/andy-personal-website/static/js/main.4b656806.chunk.js"
+    "revision": "b3bf0eaa29822c45ce5b",
+    "url": "/andy-personal-website/static/js/main.8d255deb.chunk.js"
   },
   {
     "revision": "d386615de4185b930ba9",
@@ -48,10 +48,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andy-personal-website/static/media/node.48e3cf2c.png"
   },
   {
-    "revision": "46ed9f656f2e2852e452466363acc68b",
-    "url": "/andy-personal-website/static/media/patrick-fore.46ed9f65.jpg"
-  },
-  {
     "revision": "22284ad7b7210df2e08d708758b6c4e8",
     "url": "/andy-personal-website/static/media/python.22284ad7.png"
   },
@@ -62,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c0b3c4abc220a6a4b1219355588c560e",
     "url": "/andy-personal-website/static/media/shoppingCart.c0b3c4ab.gif"
+  },
+  {
+    "revision": "f10f4eecbafe16d7a2b50a8e06d121f8",
+    "url": "/andy-personal-website/static/media/thomas_l_ricci.f10f4eec.gif"
   }
 ]);
