@@ -103,6 +103,9 @@ export default function Profile(props) {
             <img src={require('./images/amazon.png')} style={{ width: '6%', height: '70%', marginRight: "2%" }} />
             <img src={require('./images/agile.png')} style={{ width: '6%', height: '80%' }} />
           </div>
+          <div>
+              <a style={{border:"1px solid", color:"white", fontSize:"2vw"}}href="https://github.com/AndiLuo">GitHub</a>
+            </div>
         </Jumbotron>
       </div>
       <br />
@@ -142,9 +145,9 @@ export default function Profile(props) {
     <br/>
     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
     <Row style={{color:"white", fontFamily:"Consolas"}} className="align-items-center">
-      <Col xs={6} md={1}>
+      <Col xs={1} >
       </Col>
-      <Col xs={6} md={4}>
+      <Col xs={5} style={{marginTop:"5px"}}>
         <p style={{fontSize:"1.4vw", borderBottom:"1px solid"}}>Cardstagram (MERN stack application)</p>
         <p style={{fontSize:"1vw"}}>
         A web application which allows the user to view, search for and create cards. Cards can be created through the usage of a form which contain the fields 
@@ -155,7 +158,7 @@ export default function Profile(props) {
           Link to project!
         </a>
       </Col>
-      <Col md={1}></Col>
+      <Col xs={1}></Col>
       <Col xsOffSet={2} xs={1}>
         <img src={require('./images/mern.gif')} style={{ width: '500%', height: '1000%'}}/>
       </Col>
@@ -164,23 +167,23 @@ export default function Profile(props) {
     <br/>
     <br/>
     <Row style={{color:"white", fontFamily:"Consolas"}} className="align-items-center">
-      <Col xs={6} md={1}>
+      <Col xs={1} >
       </Col>
-      <Col xsOffSet={2} xs={1}>
+      <Col  xs={1} style={{marginTop:"5px"}} >
         <img src={require('./images/shoppingCart.gif')} style={{ width: '500%', height: '1000%'}}/>
       </Col>
-      <Col md={4}></Col>
-      <Col xs={6} md={4}>
+      <Col xs={4} style={{height:"100%"}}></Col>
+      <Col xs={5} style={{marginTop:"5px"}}>
         <p style={{fontSize:"1.4vw", borderBottom:"1px solid"}}>Mr.Miyagi's Katana Store (Angular Shopping Cart)</p>
         <p style={{fontSize:"1vw"}}>
         An angular web application which allows you to shop for swords! This app includes: a form for inputing your shipping details (includes required fields), a dropdown containing the available items for sale 
         + quantity indication and order details displaying your shipping info, sub-total, applicable taxes and grand total. You are able to delete items from the order details and the price gets updated.
         </p>
         <a style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
-          Link to project!
         </a>
         </Col>
     </Row>
+    <br/>
 
     </div>
   );
