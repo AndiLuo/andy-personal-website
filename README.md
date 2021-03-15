@@ -1,1 +1,1 @@
-My personal landing page produced with react-js
+My personal website produced with react.js
