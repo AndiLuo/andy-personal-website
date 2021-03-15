@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 
 import "./styles.css";
-import mountain from "./images/patrick-fore.jpg";
+import mountain from "./images/thomas_l_ricci.gif";
 import andy from "./images/andy.jpg";
 
 function useWindowSize() {
@@ -117,7 +117,7 @@ export default function Profile(props) {
               <p style={{ fontSize: "2vw" }}>Andy Luo</p>
             </div>
           </div>
-          <div style={{ textAlign: "center", fontSize: "1.2vw", color: "white", borderBottom: "2px solid", }}>
+          <div style={{ textAlign: "center", fontSize: "1.4vw", color: "white", borderBottom: "2px solid", }}>
             <p>
               First and foremost, thank you for stopping by!
               </p>
@@ -148,8 +148,8 @@ export default function Profile(props) {
       <Col xs={1} >
       </Col>
       <Col xs={5} style={{marginTop:"5px"}}>
-        <p style={{fontSize:"1.4vw", borderBottom:"1px solid"}}>Cardstagram (MERN stack application)</p>
-        <p style={{fontSize:"1vw"}}>
+        <p style={{fontSize:"2vw", borderBottom:"1px solid"}}>Cardstagram (MERN stack application)</p>
+        <p style={{fontSize:"1.4vw"}}>
         A web application which allows the user to view, search for and create cards. Cards can be created through the usage of a form which contain the fields 
         Title, Author, ImageURL, description and dimensions. After form submission, the data is logged in to the Mongo database and should be viewable/searchable 
         on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing.
@@ -174,8 +174,8 @@ export default function Profile(props) {
       </Col>
       <Col xs={4} style={{height:"100%"}}></Col>
       <Col xs={5} style={{marginTop:"5px"}}>
-        <p style={{fontSize:"1.4vw", borderBottom:"1px solid"}}>Mr.Miyagi's Katana Store (Angular Shopping Cart)</p>
-        <p style={{fontSize:"1vw"}}>
+        <p style={{fontSize:"2vw", borderBottom:"1px solid"}}>Mr.Miyagi's Katana Store (Angular Shopping Cart)</p>
+        <p style={{fontSize:"1.4vw"}}>
         An angular web application which allows you to shop for swords! This app includes: a form for inputing your shipping details (includes required fields), a dropdown containing the available items for sale 
         + quantity indication and order details displaying your shipping info, sub-total, applicable taxes and grand total. You are able to delete items from the order details and the price gets updated.
         </p>
