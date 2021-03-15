@@ -36,7 +36,7 @@ export default function Profile(props) {
     backgroundAttachment: 'fixed',
     backgroundSize: "auto",
     backgroundPosition: "center center",
-    backgroundRepeat: 'no-repeat',
+    maxheight:"-webkit-fill-available",
     height: "100vh",
     fontFamily: "Consolas",
     fontSize: "1vw",
@@ -73,7 +73,8 @@ export default function Profile(props) {
 
   //overflow-x css property deals with extra whitespace produced by "left" property here
   return (
-    <div style={{ backgroundColor: 'Black', zoom: "0.5", height: { height }, width: { width }, overflowX: "hidden", overflowY: "hidden" }}>
+    <div style={{ backgroundColor: 'Black', overflowX: "hidden", overflowY: "hidden" }}>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"/>
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
