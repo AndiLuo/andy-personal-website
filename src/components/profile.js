@@ -122,7 +122,7 @@ export default function Profile(props) {
               First and foremost, thank you for stopping by!
               </p>
             <p>
-              Currently, I'm looking for entry/junior level oppurtunuties in development or IT.
+              Currently, I'm looking for entry/junior level opportunities in development or IT.
               </p>
             <p>
               I'm a recent graduate of BCITs Computer Science program who majored in IT. Much of my education was distrubted as 60% IT infrastructure technologies such as
@@ -155,7 +155,7 @@ export default function Profile(props) {
         on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing.
         </p>
         <a style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
-          Link to project!
+          Link to project!(coming soon)
         </a>
       </Col>
       <Col xs={1}></Col>

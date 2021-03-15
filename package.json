@@ -1,6 +1,7 @@
 {
   "name": "myapp",
   "version": "0.1.0",
+  "homepage":"http://andiluo.github.io/andy-personal-website",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.14",
