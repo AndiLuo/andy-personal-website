@@ -96,7 +96,8 @@ export default function Profile(props) {
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
             <img src={require('./images/react.png')} style={{ width: '10%', height: '60%', marginRight: "2%" }} />
             <img src={require('./images/node.png')} style={{ width: '4%', height: '70%', marginRight: "2%" }} />
-            <img src={require('./images/mysql.png')} style={{ width: '5%', height: '70%', marginRight: "2%" }} />
+            <img src={require('./images/angular.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
+            <img src={require('./images/mysql.png')} style={{ width: '5%', height: '80%', marginRight: "2%" }} />
             <img src={require('./images/python.png')} style={{ width: '6%', height: '70%', marginRight: "2%" }} />
             <img src={require('./images/mongo.jpg')} style={{ width: '4%', height: '70%', marginRight: "2%" }} />
             <img src={require('./images/amazon.png')} style={{ width: '6%', height: '70%', marginRight: "2%" }} />
@@ -125,7 +126,7 @@ export default function Profile(props) {
               database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
                 </p>
             <p>
-              As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different stacks ute MERN is what I'm most familiar with. However, I really want to learn all the different technologies this industry has to offer!
+              As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. However, I really want to learn all the different technologies this industry has to offer!
               I've been experimenting with GraphQL and ApolloClient recently which I find very intuitive.
                 </p>
           </div>
@@ -162,8 +163,24 @@ export default function Profile(props) {
     </div>
     <br/>
     <br/>
-    <br/>
-    <br/>
+    <Row style={{color:"white", fontFamily:"Consolas"}} className="align-items-center">
+      <Col xs={6} md={1}>
+      </Col>
+      <Col xsOffSet={2} xs={1}>
+        <img src={require('./images/shoppingCart.gif')} style={{ width: '500%', height: '1000%'}}/>
+      </Col>
+      <Col md={4}></Col>
+      <Col xs={6} md={4}>
+        <p style={{fontSize:"1.4vw", borderBottom:"1px solid"}}>Mr.Miyagi's Katana Store (Angular Shopping Cart)</p>
+        <p style={{fontSize:"1vw"}}>
+        An angular web application which allows you to shop for swords! This app includes: a form for inputing your shipping details (includes required fields), a dropdown containing the available items for sale 
+        + quantity indication and order details displaying your shipping info, sub-total, applicable taxes and grand total. You are able to delete items from the order details and the price gets updated.
+        </p>
+        <a style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
+          Link to project!
+        </a>
+        </Col>
+    </Row>
 
     </div>
   );
