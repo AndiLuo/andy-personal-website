@@ -13,7 +13,7 @@ const client = new ApolloClient({
 });
 
 function App(props) {
-
+  //for gh pages, must add exact route of homepage as route
   return (
     //Apollo client routing
     <body>
