@@ -32,16 +32,13 @@ export default function Profile(props) {
   const jumboStyle = {
     color: "white",
     backgroundImage: `url(${mountain}) `,
-    //backgroundattachment: fixed = image scroll dissapears as you scroll!
+    //backgroundattachment: fixed = image scroll dissapears as you scroll!s
     backgroundAttachment: 'fixed',
-    backgroundSize: "auto",
-    backgroundPosition: "center center",
     maxheight:"-webkit-fill-available",
     height: "100vh",
     fontFamily: "Consolas",
     fontSize: "1vw",
     display: "flex",
-    position: "relative",
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "center",
