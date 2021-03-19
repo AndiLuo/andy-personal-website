@@ -150,10 +150,10 @@ export default function Profile(props) {
         <p style={{fontSize:"1.1vw"}}>
         A web application which allows the user to view, search for and create cards. Cards can be created through the usage of a form which contain the fields 
         Title, Author, ImageURL, description and dimensions. After form submission, the data is logged in to the Mongo database and should be viewable/searchable 
-        on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing.
+        on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing. The backend is hosted on a heroku API and the client is available on a netlify.
         </p>
         <a style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
-          Link to project!(coming soon)
+          Link to project: https://hungry-kare-841e43.netlify.app/
         </a>
       </Col>
       <Col xs={1}></Col>
@@ -167,8 +167,8 @@ export default function Profile(props) {
     <Row style={{color:"white", fontFamily:"Consolas"}} className="align-items-center">
       <Col xs={1} >
       </Col>
-      <Col  xs={1} style={{marginTop:"5px"}} >
-        <img src={require('./images/shoppingCart.gif')} style={{ width: '500%', height: '1000%'}}/>
+      <Col  xs={1} style={{marginTop:"5px", width: {trueWidth}, height: {trueHeight} }} >
+        <img src={require('./images/shoppingCart.gif')} style={{ minWidth:"200%", width: '500%', height:'1000%'}}/>
       </Col>
       <Col xs={4} style={{height:"100%"}}></Col>
       <Col xs={5} style={{marginTop:"5px"}}>
