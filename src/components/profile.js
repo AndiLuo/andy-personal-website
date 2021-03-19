@@ -123,7 +123,7 @@ export default function Profile(props) {
               Currently, I'm looking for entry/junior level opportunities in development or IT.
               </p>
             <p>
-              I'm a recent graduate of BCITs Computer Science program who majored in IT. Much of my education was distrubted as 60% IT infrastructure technologies such as
+              I'm a recent graduate of BCITs Computer Science program who majored in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
               database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
                 </p>
             <p>
@@ -152,8 +152,8 @@ export default function Profile(props) {
         Title, Author, ImageURL, description and dimensions. After form submission, the data is logged in to the Mongo database and should be viewable/searchable 
         on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing. The backend is hosted on a heroku API and the client is available on a netlify.
         </p>
-        <a style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
-          Link to project: https://hungry-kare-841e43.netlify.app/
+        <a href="https://hungry-kare-841e43.netlify.app/" style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
+          Link to project
         </a>
       </Col>
       <Col xs={1}></Col>
