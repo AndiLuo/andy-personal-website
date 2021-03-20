@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35b8100e2058c90e15ece506ff854822",
+    "revision": "2602ab1259872f47c28efcf37c579c25",
     "url": "/andy-personal-website/index.html"
   },
   {
-    "revision": "aff74bac783f5d7e8467",
+    "revision": "1f12e5a7ab7b29e65036",
     "url": "/andy-personal-website/static/css/main.2ce6b4bb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andy-personal-website/static/js/2.c62c6f7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aff74bac783f5d7e8467",
-    "url": "/andy-personal-website/static/js/main.626b094b.chunk.js"
+    "revision": "1f12e5a7ab7b29e65036",
+    "url": "/andy-personal-website/static/js/main.fd520877.chunk.js"
   },
   {
     "revision": "d386615de4185b930ba9",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andy-personal-website/static/media/amazon.62e740a6.png"
   },
   {
-    "revision": "4cbc497bbc1a0896e523ce71a8dc9d32",
-    "url": "/andy-personal-website/static/media/andy.4cbc497b.jpg"
+    "revision": "16a7c3c7d3b7f7bc21b0ff4fe8c9cf3c",
+    "url": "/andy-personal-website/static/media/andy_2.16a7c3c7.jpg"
   },
   {
     "revision": "29c8c83b835575979dc96c5a34cebb71",
