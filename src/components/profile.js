@@ -11,7 +11,7 @@ import {
 
 import "./styles.css";
 import mountain from "./images/patrick-fore.jpg";
-import andy from "./images/andy.jpg";
+import andy from "./images/andy_2.jpg";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
