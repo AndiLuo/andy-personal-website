@@ -152,7 +152,7 @@ export default function Profile(props) {
         Title, Author, ImageURL, description and dimensions. After form submission, the data is logged in to the Mongo database and should be viewable/searchable 
         on the main landing page of the application. Technologies used include MongoDB, React/Redux, Express, Node, and Apolloclient for routing. The backend is hosted on a heroku API and the client is available on a netlify.
         </p>
-        <a href="https://hungry-kare-841e43.netlify.app/" style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
+        <a href="https://cardstagram.netlify.app/" style={{borderBottom:"1px solid", fontSize:"1.4vw"}}>
           Link to project
         </a>
       </Col>
