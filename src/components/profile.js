@@ -122,14 +122,14 @@ export default function Profile(props) {
           </div>
           <div>
               <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
-              <Link activeClass ="about" to="about" spy={true} smooth={true} duration={700}>
+              <Link activeClass ="about" to="about" spy={true} smooth={true} duration={500}>
                 About Me!
               </Link>
               </Button>
               
               |
               <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
-              <Link activeClass ="projects" to="projects" spy={true} smooth={true} duration={700}>
+              <Link activeClass ="projects" to="projects" spy={true} smooth={true} duration={500}>
                 Projects
               </Link>
               </Button>
