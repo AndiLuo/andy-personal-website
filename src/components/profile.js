@@ -123,12 +123,11 @@ export default function Profile(props) {
               Currently, I'm looking for entry/junior level opportunities in development or IT.
               </p>
             <p>
-              I'm a recent graduate of BCITs Computer Science program who majored in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
+            I'm a recent graduate of BCITs Computer Science program, majoring in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
               database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
                 </p>
             <p>
-              As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. However, I really want to learn all the different technologies this industry has to offer!
-              I've been experimenting with GraphQL and ApolloClient recently which I find very intuitive.
+            As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. Recently, I've been experimenting with GraphQL and ApolloClient, which I find very intuitive. However, I really want to learn all the different technologies this industry has to offer!
                 </p>
           </div>
         </div>
