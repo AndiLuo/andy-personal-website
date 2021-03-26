@@ -1,20 +1,35 @@
 import React, { useState, useLayoutEffect } from "react";
 import Projects from "./projects"
+import About from "./about"
 import Scroll from 'react-scroll'
-import { Element } from 'react-scroll'
-
-
+import Button from '@material-ui/core/Button';
 import {
   Jumbotron,
   Container,
   Row,
   Col,
-  Image
+  Image,
 } from "react-bootstrap";
-
 import "./styles.css";
 import mountain from "./images/patrick-fore.jpg";
-import andy from "./images/andy_2.jpg";
+
+
+const styles = {
+  root: {
+    "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: "green",
+        fontFamily:"Consolas"
+      },
+  },
+  input: {
+    color: "white",
+    fontSize:"1vw",
+    fontFamily:"Consolas"
+  }
+};
+
+const Link = Scroll.Link
+
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -28,7 +43,7 @@ function useWindowSize() {
   }, []);
   return size;
 }
-const ScrollElement = Scroll.ScrollElement
+
 
 export default function Profile(props) {
   const [width, height] = useWindowSize()
@@ -106,53 +121,37 @@ export default function Profile(props) {
             <img src={require('./images/agile.png')} style={{ width: '6%', height: '80%' }} />
           </div>
           <div>
-              <a style={{border:"1px solid", color:"white", fontSize:"2vw"}}href="https://github.com/AndiLuo">GitHub</a>
+              <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
+              <Link activeClass ="about" to="about" spy={true} smooth={true} duration={700}>
+                About Me!
+              </Link>
+              </Button>
+              
               |
-              <ScrollElement to="projects" spy={true} smooth={true} duration={400} style={{border:"1px solid", color:"white", fontSize:"2vw"}}>
+              <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
+              <Link activeClass ="projects" to="projects" spy={true} smooth={true} duration={700}>
                 Projects
-              </ScrollElement>
+              </Link>
+              </Button>
+              |
+              <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
+              <a href="https://github.com/AndiLuo">GitHub</a>
+              </Button>
+              
           </div>
         </Jumbotron>
       </div>
       <br />
-      <div style={flexOne}>
-        <div style={{ width: '75%', height: '40%' }}>
-          <div style={centerImage}>
-            <Image style={{ width: '27%', height: '95%' }} src={andy} roundedCircle />
-            <div style={{ color: "white", marginTop: "-0.6%" }}>
-              <p style={{ fontSize: "2vw" }}>Andy Luo</p>
-            </div>
-          </div>
-          <div style={{ textAlign: "center", fontSize: "1.1vw", color: "white", borderBottom: "2px solid", }}>
-            <p>
-              First and foremost, thank you for stopping by!
-              </p>
-            <p>
-              Currently, I'm looking for entry/junior level opportunities in development or IT.
-              </p>
-            <p>
-            I'm a recent graduate of BCITs Computer Science program, majoring in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
-              database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
-                </p>
-            <p>
-            As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. Recently, I've been experimenting with GraphQL and ApolloClient, which I find very intuitive. However, I really want to learn all the different technologies this industry has to offer!
-                </p>
-          </div>
-        </div>
-      </div>
-    <br/>
-    <br/>
+      <About/>
+      
     <div style={flexOne}>
       <div>
         <p style={{ fontSize: "2.2vw", color:"white" }}>Personal Projects</p>
       </div>
     </div>
     <br/>
-    <Element id="projects" name="projects">
-    
-    </Element>
-    <Projects/>
 
+    <Projects/>
     </div>
   );
 }
