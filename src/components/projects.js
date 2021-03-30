@@ -47,6 +47,7 @@ export default function Projects(props) {
                         <a href="https://cardstagram.netlify.app/" style={{ borderBottom: "1px solid", fontSize: "1.4vw" }}>
                             Link to project
                         </a>
+                        <p>(Takes a little bit to start up, b/c free tier database)</p>
                     </Col>
                     <Col xs={1}></Col>
                     <Col xsOffSet={2} xs={1}>
