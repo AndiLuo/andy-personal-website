@@ -135,7 +135,7 @@ export default function Profile(props) {
               </Button>
               |
               <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
-              <a href="https://github.com/AndiLuo">GitHub</a>
+              <a href="https://github.com/AndiLuo" target="_blank">GitHub</a>
               </Button>
               
           </div>
