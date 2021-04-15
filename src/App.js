@@ -22,7 +22,7 @@ function App(props) {
     <ApolloProvider client = {client}>
       <Provider store = {store}>
         <BrowserRouter>
-            <Route exact path ="/home/" component={Profile}/>
+            <Route exact path ="https://AndiLuo.github.io/home" component={Profile}/>
             <Route exact path ="/about/" component={About}/>
         </BrowserRouter>
       </Provider>
