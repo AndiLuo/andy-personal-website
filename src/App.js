@@ -7,6 +7,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import "./components/styles.css"
 
 import Profile from './components/profile'
+import About from './components/about'
 
 const client = new ApolloClient({
   uri: 'http://localhost:8080/',
@@ -21,7 +22,8 @@ function App(props) {
     <ApolloProvider client = {client}>
       <Provider store = {store}>
         <BrowserRouter>
-            <Route exact path ="/andy-personal-website/" component={Profile}/>
+            <Route exact path ="/home/" component={Profile}/>
+            <Route exact path ="/about/" component={About}/>
         </BrowserRouter>
       </Provider>
     </ApolloProvider>

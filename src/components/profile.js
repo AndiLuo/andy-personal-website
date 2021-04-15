@@ -3,6 +3,8 @@ import Projects from "./projects"
 import About from "./about"
 import Scroll from 'react-scroll'
 import Button from '@material-ui/core/Button';
+import { useHistory } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 import {
   Jumbotron,
   Container,
@@ -11,7 +13,9 @@ import {
   Image,
 } from "react-bootstrap";
 import "./styles.css";
-import mountain from "./images/patrick-fore.jpg";
+import graybg from "./images/graybg.png"
+import geo from "./images/thomas.gif";
+import andyLogo from "./images/andy_logo_white.png"
 
 
 const styles = {
@@ -48,11 +52,22 @@ function useWindowSize() {
 export default function Profile(props) {
   const [width, height] = useWindowSize()
 
+  const history = useHistory()
+
+  const redirectAbout = () => {
+    history.push('/about/')
+    window.scrollTo(0,0)
+  }
+
   const jumboStyle = {
     color: "white",
-    backgroundImage: `url(${mountain}) `,
+    backgroundColor: "white",
+    backgroundRepeat:"no-repeat",
     //backgroundattachment: fixed = image scroll dissapears as you scroll!s
+    background:`linear-gradient( rgba(0.5, 0.2, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(${geo})`,
     backgroundAttachment: 'fixed',
+    backgroundSize: "cover",
+    backgroundPosition:"center",
     maxheight:"-webkit-fill-available",
     height: "100vh",
     fontFamily: "Consolas",
@@ -61,7 +76,7 @@ export default function Profile(props) {
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "center",
-    textAlign: "center"
+    textAlign: "center",
   };
 
   const centerImage = {
@@ -83,13 +98,17 @@ export default function Profile(props) {
     fontFamily: "Consolas"
   }
 
+  const button = {
+    fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"
+  }
+
   const trueWidth = `${width}px`
   const trueHeight = `${height}px`
 
 
   //overflow-x css property deals with extra whitespace produced by "left" property here
   return (
-    <div style={{ backgroundColor: 'Black', overflowX: "hidden", overflowY: "hidden" }}>
+    <div style={{ background: `url(${graybg}` , overflowX: "hidden", overflowY: "hidden" }}>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"/>
       <link
         rel="stylesheet"
@@ -102,10 +121,14 @@ export default function Profile(props) {
         <Jumbotron style={jumboStyle}>
           <br />
           <br />
-          <div stlye={{ textAlign: "center" }}>
-            <h1 style={{ fontSize: "350%", height: { trueHeight }, width: { trueWidth } }}>Hi I'm Andy!</h1>
+          <div style={{ textAlign: "center" }}>
             <div>
-              <p style={{ fontSize: "130%" }}>
+              <Image style={{ width: '31%', height: '95%' }} src={andyLogo} />
+            </div>
+            <br/>
+            <h1 style={{ fontSize: "200%"}}>Hi I'm Andy</h1>
+            <div>
+              <p style={{ fontSize: "150%" }}>
                 BCIT Graduate - Full-Stack Dev - Information Technology
                 </p>
             </div>
@@ -121,36 +144,26 @@ export default function Profile(props) {
             <img src={require('./images/agile.png')} style={{ width: '6%', height: '80%' }} />
           </div>
           <div>
-              <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
-              <Link activeClass ="about" to="about" spy={true} smooth={true} duration={500}>
-                About Me!
-              </Link>
+              <Button onClick= {redirectAbout} variant="outlined" color="primary" style={button}>
+                About Me
               </Button>
               
               |
-              <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
+              <Button variant="outlined" color="primary" style={button}>
               <Link activeClass ="projects" to="projects" spy={true} smooth={true} duration={500}>
                 Projects
               </Link>
               </Button>
               |
-              <Button variant="outlined" color="primary" style={{fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"}}>
-              <a href="https://github.com/AndiLuo" target="_blank">GitHub</a>
+              <Button onClick = {() => window.open('https://github.com/AndiLuo', "_blank")} variant="outlined" color="primary" style={button}>
+              GitHub
               </Button>
               
           </div>
+          
         </Jumbotron>
       </div>
-      <br />
-      <About/>
-      
-    <div style={flexOne}>
-      <div>
-        <p style={{ fontSize: "2.2vw", color:"white" }}>Personal Projects</p>
-      </div>
-    </div>
     <br/>
-
     <Projects/>
     </div>
   );
