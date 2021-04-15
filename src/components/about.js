@@ -38,7 +38,7 @@ export default function About(props) {
   const history = useHistory()
 
   const redirectHome = () => {
-    history.push('/home/')
+    history.push('/')
     window.scrollTo(0,0)
   }
   const centerImage = {
