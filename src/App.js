@@ -22,8 +22,8 @@ function App(props) {
     <ApolloProvider client = {client}>
       <Provider store = {store}>
         <HashRouter>
-            <Route exact path ="https://AndiLuo.github.io/home" component={Profile}/>
-            <Route exact path ="https://AndiLuo.github.io/about" component={About}/>
+            <Route exact path ="/" component={Profile}/>
+            <Route exact path ="/about" component={About}/>
         </HashRouter>
       </Provider>
     </ApolloProvider>
