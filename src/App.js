@@ -3,7 +3,7 @@ import {Provider, connect} from 'react-redux';
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo';
 import store from './store/';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import "./components/styles.css"
 
 import Profile from './components/profile'
@@ -21,10 +21,10 @@ function App(props) {
     <div className = "website">
     <ApolloProvider client = {client}>
       <Provider store = {store}>
-        <BrowserRouter>
+        <HashRouter>
             <Route exact path ="https://AndiLuo.github.io/home" component={Profile}/>
-            <Route exact path ="/about/" component={About}/>
-        </BrowserRouter>
+            <Route exact path ="https://AndiLuo.github.io/about" component={About}/>
+        </HashRouter>
       </Provider>
     </ApolloProvider>
     </div>
