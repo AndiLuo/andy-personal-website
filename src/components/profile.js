@@ -56,7 +56,7 @@ export default function Profile(props) {
 
   const redirectAbout = () => {
     history.push('/about/')
-    window.scrollTo()
+    window.scrollTo(0,0)
   }
 
   const jumboStyle = {
