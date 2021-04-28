@@ -9,7 +9,7 @@ import {
   Col,
   Image
 } from "react-bootstrap";
-import andy from "./images/andy_2.jpg";
+import andy from "./images/andy_2.jpg"
 import graybg from "./images/graybg.png";
 import andyLogo from "./images/andy_logo_white.png"
 
@@ -59,19 +59,6 @@ export default function About(props) {
     textAlign: "center"
   }
 
-  // const styles = {
-  //   backgroundSize: "cover",
-  //   maxheight: "-webkit-fill-available",
-  //   fontFamily: "Consolas",
-  //   fontSize: "1vw",
-  //   display: "flex",
-  //   alignItems: "center",
-  //   flexDirection: "column",
-  //   justifyContent: "center",
-  //   textAlign: "center",
-  //   flex: "1",
-  //   flexShrink: "0"
-  // }
   const jumboStyle = {
     color: "white",
     maxheight: "-webkit-fill-available",
@@ -130,7 +117,7 @@ export default function About(props) {
             </Col>
             <Col xs={2} style={{ marginTop: "5px", width: { trueWidth }, height: { trueHeight } }} >
               <div style={centerImage}>
-                <Image style={{ width: '140%', height: '95%' }} src={andy} roundedCircle />
+                <Image style={{ width: '140%', height: '95%' }} src={andy} rounded />
                 <div style={{ color: "white", marginTop: "-0.6%" }}>
                   <p style={{ fontSize: "2vw" }}>Andy Luo</p>
                 </div>
