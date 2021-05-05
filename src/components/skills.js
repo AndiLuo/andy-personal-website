@@ -71,10 +71,10 @@ export default function SkillsBar() {
         const width = skills.level;
   
         return (
-          <li key={skills.name}>
+          <ul key={skills.name}>
             <span style={{ width, backgroundColor }} className = {className}></span>
             <em>{skills.name}</em>
-          </li>
+          </ul>
         );
       });
 
