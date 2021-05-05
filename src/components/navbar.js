@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <div>
-            <nav id="navbar" class="">
+            <nav id="navbar" >
                 <div class="nav-wrapper">
                     <ul id="menu" style={{cursor:"pointer"}}>
                         <li><Link onClick= {redirectHome}>Home</Link></li>
