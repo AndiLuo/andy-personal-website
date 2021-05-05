@@ -1,17 +1,15 @@
 import React from 'react';
-import {Provider, connect} from 'react-redux';
-import ApolloClient from 'apollo-boost'
-import { ApolloProvider } from 'react-apollo';
-import store from './store/';
 import { Route, HashRouter } from 'react-router-dom';
 import "./components/styles.css"
-
-import Profile from './components/profile'
+import Profile from './components/home'
 import About from './components/about'
+import PageShell from './components/pageShell'
 
-const client = new ApolloClient({
-  uri: 'http://localhost:8080/',
-});
+const routes = [
+  { path: '/', name: 'Home', Component: Profile },
+  { path: '/about', name: 'About', Component: About },
+  
+]
 
 function App(props) {
   //for gh pages, must add exact route of homepage as route
@@ -19,14 +17,10 @@ function App(props) {
     //Apollo client routing
     <body>
     <div className = "website">
-    <ApolloProvider client = {client}>
-      <Provider store = {store}>
         <HashRouter>
-            <Route exact path ="/" component={Profile}/>
-            <Route exact path ="/about" component={About}/>
+            <Route exact path ="/" component={PageShell(Profile)}/>
+            <Route exact path ="/about" component={PageShell(About)}/>
         </HashRouter>
-      </Provider>
-    </ApolloProvider>
     </div>
     </body>
   );

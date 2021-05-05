@@ -1,17 +1,17 @@
 import React, { useState, useLayoutEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { Element } from 'react-scroll'
-import Button from '@material-ui/core/Button';
 import {
-  Jumbotron,
-  Container,
   Row,
   Col,
   Image
 } from "react-bootstrap";
+import NavBar from "./navbar"
+import Slide from "react-reveal";
+import SkillsBar from './skills'
 import andy from "./images/andy_2.jpg"
-import graybg from "./images/graybg.png";
+import graybg from "./images/thomas.gif";
 import andyLogo from "./images/andy_logo_white.png"
+import './styles.css'
 
 
 
@@ -39,8 +39,9 @@ export default function About(props) {
 
   const redirectHome = () => {
     history.push('/')
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
   }
+
   const centerImage = {
     display: "flex",
     flexDirection: "column",
@@ -48,39 +49,32 @@ export default function About(props) {
     color: "white"
   }
 
-  const flexOne = {
-    display: 'flex',
-    flexDirection: "column",
-    flex: "1",
-    fontFamily: "Consolas",
-    alignItems: "center",
-    justifyContent: "center",
-    maxheight: "-webkit-fill-available",
-    textAlign: "center"
-  }
-
   const jumboStyle = {
     color: "white",
+    backgroundColor: "white",
+    backgroundRepeat: "no-repeat",
+    //backgroundattachment: fixed = image scroll dissapears as you scroll!s
+    background: `linear-gradient( rgba(0.9, 0.2, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(${graybg})`,
+    backgroundAttachment: 'fixed',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     maxheight: "-webkit-fill-available",
-    fontFamily: "Consolas",
-    fontSize: "1.2vw",
+    height: "100vh",
+    width:"100%",
+    fontFamily: "Helvetica, sans-serif",
+    fontSize: "1vw",
     display: "flex",
-    height: "50%",
     alignItems: "center",
     flexDirection: "column",
-    flex: "1",
+    justifyContent: "center",
     textAlign: "center",
-    height: "100vh"
+    overflow: "hidden"
 
   };
 
-  const button = {
-    fontFamily: "Consolas", borderColor: "white", fontSize: "1vw", color: "white"
-  }
-
 
   return (
-    <div style={{ position: "relative", height: "100%", backgroundSize: "100%", background: `url(${graybg})`, overflowX: "hidden", overflowY: "hidden" }}>
+    <div style={jumboStyle}>
       <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" />
       <link
         rel="stylesheet"
@@ -88,58 +82,47 @@ export default function About(props) {
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous"
       />
-      <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet"></link>
-      <br/>
-      <div style={flexOne}>
-        <div>
-          <Image style={{ width: '100%', height: '95%' }} src={andyLogo} />
-        </div>
-        <br/>
-        <div>
-          <Button variant="outlined" onClick={redirectHome} color="primary" style={button}>
-            Home
-          </Button>
-          |
-          <Button variant="outlined" onClick={() => window.open('https://github.com/AndiLuo')} color="primary" style={button}>
-            GitHub
-          </Button>
-          </div>
-      </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <div style={jumboStyle}>
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet" />
+      <div>
+        <div><NavBar /></div>
+
         <div style={{ width: '75%', height: '40%' }}>
-          <Row style={{ color: "white", fontFamily: "Consolas" }} className="align-items-center">
+          <Row style={{ color: "white" }} className="align-items-center">
+            <Col xs={1} >
+            </Col>
+            <Col xs={5} style={{ marginTop: "2%" }}>
+            <Slide left duration={500}>
+              <div style={{ textAlign: "center", fontSize: "0.9vw", color: "white", borderBottom: "2px solid", }}>
+                <p>
+                  First and foremost, thank you for stopping by!
+              </p>
+                <p>
+                  Currently, I'm looking for entry/junior level opportunities in development or IT.
+              </p>
+                <p>
+                  I'm a recent graduate of BCITs Computer Science program, majoring in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
+                  database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
+                </p>
+                <p>
+                  As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. Recently, I've been experimenting with GraphQL and ApolloClient, which I find very intuitive. However, I really want to learn all the different technologies this industry has to offer!
+                </p>
+              </div>
+              </Slide>
+            </Col>
+            
             <Col xs={1} >
             </Col>
             <Col xs={2} style={{ marginTop: "5px", width: { trueWidth }, height: { trueHeight } }} >
               <div style={centerImage}>
                 <Image style={{ width: '140%', height: '95%' }} src={andy} rounded />
-                <div style={{ color: "white", marginTop: "-0.6%" }}>
-                  <p style={{ fontSize: "2vw" }}>Andy Luo</p>
-                </div>
               </div>
             </Col>
-            <Col xs={2} style={{ height: "100%" }}></Col>
-            <Col xs={7} style={{ marginTop: "5px" }}>
-            <div style={{ textAlign: "center", fontSize: "1.1vw", color: "white", borderBottom: "2px solid", }}>
-          <p>
-            First and foremost, thank you for stopping by!
-              </p>
-          <p>
-            Currently, I'm looking for entry/junior level opportunities in development or IT.
-              </p>
-          <p>
-            I'm a recent graduate of BCITs Computer Science program, majoring in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
-            database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
-                </p>
-          <p>
-            As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. Recently, I've been experimenting with GraphQL and ApolloClient, which I find very intuitive. However, I really want to learn all the different technologies this industry has to offer!
-                </p>
-        </div>
+            <Col xs={1} >
+            </Col>
+            <Col xs={2} style={{ marginTop: "5px"}} >
+              <div style={{width:"5"}}>
+                <SkillsBar/>
+              </div>
             </Col>
           </Row>
         </div>
