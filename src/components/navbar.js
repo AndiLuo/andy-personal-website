@@ -32,22 +32,7 @@ export default function Navbar() {
                         <li><Link onClick= {redirectAbout}>About</Link></li>
                     </ul>
                 </div>
-            </nav>
-            {/* <Button onClick= {redirectAbout} variant="outlined" color="primary" style={button}>
-                About Me
-              </Button>
-              
-              |
-              <Button variant="outlined" color="primary" style={button}>
-              <Link activeClass ="projects" to="projects" spy={true} smooth={true} duration={500}>
-                Projects
-              </Link>
-              </Button>
-              |
-              <Button onClick = {() => window.open('https://github.com/AndiLuo', "_blank")} variant="outlined" color="primary" style={button}>
-              GitHub
-              </Button> */}
-            
+            </nav> 
         </div>
     )
 

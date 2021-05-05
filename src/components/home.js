@@ -107,6 +107,7 @@ export default function Profile(props) {
             <img src={require('./images/Black.png')} style={{ width: '4%', height: '70%', marginRight: "2%" }} />
             <img src={require('./images/Black.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
             <img src={require('./images/Black.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
+            <img src={require('./images/Black.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
             
          
           </div>
