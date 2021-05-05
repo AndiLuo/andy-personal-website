@@ -76,9 +76,8 @@ export default function Profile(props) {
   //overflow-x css property deals with extra whitespace produced by "left" property here
   return (
     <div style={jumboStyle}>
-    
       <div style={{justifyContent:"center"}}>
-        <NavBar/>
+      <NavBar/>
         <Jumbotron style={jumboStyle}>
           <br />
           <br />

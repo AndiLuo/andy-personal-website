@@ -18,6 +18,7 @@ export default function Navbar() {
         history.push('/')
         window.scrollTo(0, 0)
     }
+    
 
     const button = {
         fontFamily: "Consolas", borderColor: "white", fontSize: "1vw", color: "white"
@@ -33,6 +34,7 @@ export default function Navbar() {
                     </ul>
                 </div>
             </nav> 
+            
         </div>
     )
 
