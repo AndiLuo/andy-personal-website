@@ -119,7 +119,7 @@ export default function About(props) {
             </Col>
             <Col xs={1} >
             </Col>
-            <Col xs={2} style={{ marginTop: "5px"}} >
+            <Col xs={1}  >
               <div style={{width:"5"}}>
                 <SkillsBar/>
               </div>
