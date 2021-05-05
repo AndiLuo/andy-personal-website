@@ -75,18 +75,12 @@ export default function Profile(props) {
 
   //overflow-x css property deals with extra whitespace produced by "left" property here
   return (
-    <div style={jumboStyle}>
-      <div style={{justifyContent:"center"}}>
+    <div>
       <NavBar/>
+      <div style={{justifyContent:"center"}}>
         <Jumbotron style={jumboStyle}>
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+  
       <Slide down duration={1000}>
           <div style={{ textAlign: "center" }}>  
             <div>
@@ -101,15 +95,6 @@ export default function Profile(props) {
             </div>
           </div>
           </Slide>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-            <img src={require('./images/Black.png')} style={{ width: '10%', height: '60%', marginRight: "2%" }} />
-            <img src={require('./images/Black.png')} style={{ width: '4%', height: '70%', marginRight: "2%" }} />
-            <img src={require('./images/Black.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
-            <img src={require('./images/Black.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
-            <img src={require('./images/Black.png')} style={{ width: '5%', height: '90%', marginRight: "2%" }} />
-            
-         
-          </div>
         </Jumbotron>
       </div>
 

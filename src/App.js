@@ -4,6 +4,7 @@ import "./components/styles.css"
 import Profile from './components/home'
 import About from './components/about'
 import PageShell from './components/pageShell'
+import NavBar from './components/navbar'
 
 const routes = [
   { path: '/', name: 'Home', Component: Profile },

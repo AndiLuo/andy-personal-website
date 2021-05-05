@@ -100,7 +100,7 @@ export default function About(props) {
                   Currently, I'm looking for entry/junior level opportunities in development or IT.
               </p>
                 <p>
-                  I'm a recent graduate of BCITs Computer Science program, majoring in IT. Much of my education was distributed as 60% IT infrastructure technologies such as
+                  I'm a recent graduate of BCITs Computer Science program, majoring in IT. Much of my education was distributed as mostly IT infrastructure technologies such as
                   database creation/management, cloud services, ADDS and DevOps. However, the other 40% was comprised of development courses utlizing languages such as Javascript, Python, SQL and some C.
                 </p>
                 <p>
