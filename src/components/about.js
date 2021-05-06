@@ -103,7 +103,7 @@ export default function About(props) {
             <Slide left duration={500}>
               <div style={{ textAlign: "center", fontSize: "1vw", color: "white", borderBottom: "2px solid", }}>
                 <p>
-                  First and foremost, thank you for stopping by!
+                Hey! I'm Andy.
               </p>
                 <p>
                   Currently, I'm looking for entry/junior level opportunities in development or IT.
