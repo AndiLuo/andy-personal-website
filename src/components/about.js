@@ -3,7 +3,8 @@ import { useHistory } from "react-router-dom";
 import {
   Row,
   Col,
-  Image
+  Image,
+  Button
 } from "react-bootstrap";
 import NavBar from "./navbar"
 import Slide from "react-reveal";
@@ -37,9 +38,8 @@ export default function About(props) {
 
   const history = useHistory()
 
-  const redirectHome = () => {
-    history.push('/')
-    window.scrollTo(0, 0)
+  const gitHub = () => {
+    window.open("https://github.com/AndiLuo")
   }
 
   const centerImage = {
@@ -74,9 +74,9 @@ export default function About(props) {
     overflow: "hidden"
   };
 
-  const textFlex = {
-  
-  };
+  const button = {
+    fontFamily: "Helvetica, sans-serif",  fontSize:"1.5vw", color:"white"
+  }
 
 
   return (
@@ -127,6 +127,14 @@ export default function About(props) {
             </Col>
             
             <Col xs={1} md={1}  >
+              <Slide right duration ={500}>
+              <div style={{justifyContent:"center"}}>
+                <Button variant="outline-light" style={button} onClick={gitHub}>GitHub</Button>
+              </div>
+              </Slide>
+              <br/>
+              <br/>
+              <br/>
               <div>
                 <SkillsBar/>
               </div>
@@ -136,24 +144,7 @@ export default function About(props) {
         <br/>
         <br/>
 
-        {/* <div style={{ width: '60%', height: '2%' }}>
-        <Row>
-            <Col xs={5} >
-            </Col>
-            <Col xs={2} style={{ marginTop: "5px", width: { trueWidth }, height: { trueHeight } }} >
-              <div style={centerImage}>
-                <Image style={{ width: '140%', height: '95%' }} src={andy} rounded />
-              </div>
-            </Col>
-            <Col xs={1} >
-            </Col>
-            <Col xs={1}  >
-              <div style={{width:"1000%"}}>
-                <SkillsBar/>
-              </div>
-            </Col>
-            </Row>
-        </div> */}
+
       </div>
     </div>
   )
