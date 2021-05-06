@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import { useHistory } from "react-router-dom";
 import {Jumbotron, Image} from "react-bootstrap";
 import "./styles.css";
-import geo from "./images/thomas.gif";
+import geo from "./images/bloom.gif";
 import andyLogo from "./images/andy_logo_white.png"
 import NavBar from "./navbar"
 import SkillsBar from './skills'
@@ -48,13 +48,6 @@ export default function Profile(props) {
 
   const jumboStyle = {
     color: "white",
-    backgroundColor: "white",
-    backgroundRepeat:"no-repeat",
-    //backgroundattachment: fixed = image scroll dissapears as you scroll!s
-    background:`linear-gradient( rgba(0.8, 0.2, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(${geo})`,
-    backgroundAttachment: 'fixed',
-    backgroundSize: "cover",
-    backgroundPosition:"center",
     maxheight:"-webkit-fill-available",
     height: "100vh",
     fontFamily: "Helvetica, sans-serif",
@@ -68,6 +61,16 @@ export default function Profile(props) {
     overflow:"hidden"
   };
 
+  const backgroundStyle = {
+    backgroundColor: "white",
+    backgroundRepeat:"no-repeat",
+    //backgroundattachment: fixed = image scroll dissapears as you scroll!s
+    background:`linear-gradient( rgba(0.8, 0.2, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(${geo})`,
+    backgroundAttachment: 'fixed',
+    backgroundSize: "cover",
+    backgroundPosition:"center",
+  }
+
  
   const button = {
     fontFamily: "Consolas", borderColor:"white", fontSize:"1vw", color:"white"
@@ -75,7 +78,7 @@ export default function Profile(props) {
 
   //overflow-x css property deals with extra whitespace produced by "left" property here
   return (
-    <div>
+    <div style={backgroundStyle}>
       <NavBar/>
       <div style={{justifyContent:"center"}}>
         <Jumbotron style={jumboStyle}>

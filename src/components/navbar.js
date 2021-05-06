@@ -18,11 +18,12 @@ export default function Navbar() {
         history.push('/')
         window.scrollTo(0, 0)
     }
-    
 
-    const button = {
-        fontFamily: "Consolas", borderColor: "white", fontSize: "1vw", color: "white"
+    const redirectProjects= () => {
+        history.push('/projects')
+        window.scrollTo(0, 0)
     }
+    
 
     return (
         <div>
@@ -31,6 +32,7 @@ export default function Navbar() {
                     <ul id="menu" style={{cursor:"pointer"}}>
                         <li><Link onClick= {redirectHome}>Home</Link></li>
                         <li><Link onClick= {redirectAbout}>About</Link></li>
+                        <li><Link onClick={redirectProjects}>Projects</Link></li>
                     </ul>
                 </div>
             </nav> 

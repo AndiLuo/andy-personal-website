@@ -8,8 +8,8 @@ import {
 import NavBar from "./navbar"
 import Slide from "react-reveal";
 import SkillsBar from './skills'
-import andy from "./images/andy_2.jpg"
-import graybg from "./images/thomas.gif";
+import andy from "./images/andy_3.jpg"
+import graybg from "./images/bloom.gif";
 import andyLogo from "./images/andy_logo_white.png"
 import './styles.css'
 
@@ -46,35 +46,41 @@ export default function About(props) {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    color: "white"
+    color: "white",
   }
 
-  const jumboStyle = {
+  const backgroundDisplay ={
     color: "white",
     backgroundColor: "white",
     backgroundRepeat: "no-repeat",
-    //backgroundattachment: fixed = image scroll dissapears as you scroll!s
     background: `linear-gradient( rgba(0.9, 0.2, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(${graybg})`,
     backgroundAttachment: 'fixed',
     backgroundSize: "cover",
     backgroundPosition: "center",
-    maxheight: "-webkit-fill-available",
-    height: "100vh",
+    height:"100vh"
+
+  }
+
+  const jumboStyle = {
+    height:"70vh",
     width:"100%",
     fontFamily: "Helvetica, sans-serif",
     fontSize: "1vw",
     display: "flex",
     alignItems: "center",
-    flexDirection: "column",
+   
     justifyContent: "center",
     textAlign: "center",
     overflow: "hidden"
+  };
 
+  const textFlex = {
+  
   };
 
 
   return (
-    <div style={jumboStyle}>
+    <div style={backgroundDisplay}>
       <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" />
       <link
         rel="stylesheet"
@@ -85,14 +91,17 @@ export default function About(props) {
       <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet" />
       <div>
         <div><NavBar /></div>
-
-        <div style={{ width: '75%', height: '40%' }}>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div >
           <Row style={{ color: "white" }} className="align-items-center">
-            <Col xs={1} >
+            <Col xs={2} md={2} >
             </Col>
-            <Col xs={5} style={{ marginTop: "2%" }}>
+            <Col xs={5} md={4} style={{ marginTop: "2%" }}>
             <Slide left duration={500}>
-              <div style={{ textAlign: "center", fontSize: "0.9vw", color: "white", borderBottom: "2px solid", }}>
+              <div style={{ textAlign: "center", fontSize: "1vw", color: "white", borderBottom: "2px solid", }}>
                 <p>
                   First and foremost, thank you for stopping by!
               </p>
@@ -107,10 +116,29 @@ export default function About(props) {
                   As of now, I'm primarily focusing on expanding my full-stack development capabilities. I have created several small-medium projects utilizing different technologies but the MERN stack is what I'm most familiar with. Recently, I've been experimenting with GraphQL and ApolloClient, which I find very intuitive. However, I really want to learn all the different technologies this industry has to offer!
                 </p>
               </div>
+              <br/>
+              
+              <div style={centerImage}>
+                <Image style={{ objectFit:"cover", width:"80%", height:"30vh"}} src={andy} rounded />
+              </div>
               </Slide>
             </Col>
+            <Col md={1}>
+            </Col>
             
-            <Col xs={1} >
+            <Col xs={1} md={1}  >
+              <div>
+                <SkillsBar/>
+              </div>
+            </Col>
+          </Row>
+        </div >
+        <br/>
+        <br/>
+
+        {/* <div style={{ width: '60%', height: '2%' }}>
+        <Row>
+            <Col xs={5} >
             </Col>
             <Col xs={2} style={{ marginTop: "5px", width: { trueWidth }, height: { trueHeight } }} >
               <div style={centerImage}>
@@ -120,12 +148,12 @@ export default function About(props) {
             <Col xs={1} >
             </Col>
             <Col xs={1}  >
-              <div style={{width:"5"}}>
+              <div style={{width:"1000%"}}>
                 <SkillsBar/>
               </div>
             </Col>
-          </Row>
-        </div>
+            </Row>
+        </div> */}
       </div>
     </div>
   )

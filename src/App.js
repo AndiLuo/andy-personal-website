@@ -3,8 +3,8 @@ import { Route, HashRouter } from 'react-router-dom';
 import "./components/styles.css"
 import Profile from './components/home'
 import About from './components/about'
+import Projects from './components/projects'
 import PageShell from './components/pageShell'
-import NavBar from './components/navbar'
 
 const routes = [
   { path: '/', name: 'Home', Component: Profile },
@@ -21,6 +21,7 @@ function App(props) {
         <HashRouter>
             <Route exact path ="/" component={PageShell(Profile)}/>
             <Route exact path ="/about" component={PageShell(About)}/>
+            <Route exact path ="/projects" component={PageShell(Projects)}/>
         </HashRouter>
     </div>
     </body>

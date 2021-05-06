@@ -18,7 +18,7 @@ const skillData = [
     },
     {
       "name":"Angular",
-      "level":"52%"
+      "level":"60%"
     },
     {
       "name":"MySQL",
@@ -57,16 +57,16 @@ const skillData = [
 export default function SkillsBar() {
 
     const getRandomColor = () => {
-        let letters = "0123456789ABCDEF";
+        let letters = "012345678";
     let color = "#";
     for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      color += letters[Math.floor(9)];
     }
     return color;
     }
 
     const skills = skillData.map((skills) => {
-        const backgroundColor = getRandomColor();
+        const backgroundColor = "white";
         const className = "bar-expand " + skills.name.toLowerCase();
         const width = skills.level;
   
@@ -79,7 +79,7 @@ export default function SkillsBar() {
       });
 
     return(
-        <div >
+        <div>
         <Slide right duration={500}>
         <div className="row skill">
           <div className="three columns header-col">
