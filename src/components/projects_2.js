@@ -72,27 +72,6 @@ export default function Projects(props) {
                             </Col>
                         </Row>
                     </div>
-                    <br />
-                    <br />
-                    <Row style={{ color: "white", fontFamily: "Consolas" }} className="align-items-center">
-                        <Col xs={1} >
-                        </Col>
-                        <Col xs={1} style={{ marginTop: "5px", width: { trueWidth }, height: { trueHeight } }} >
-                            <img src={require('./images/shoppingCart.gif')} style={{ minWidth: "200%", width: '500%', height: '1000%' }} />
-                        </Col>
-                        <Col xs={4} style={{ height: "100%" }}></Col>
-                        <Col xs={5} style={{ marginTop: "5px" }}>
-                            <p style={{ fontSize: "1.4vw", borderBottom: "1px solid" }}>Mr.Miyagi's Katana Store (Angular Shopping Cart)</p>
-                            <p style={{ fontSize: "1.1vw" }}>
-                                An angular web application which allows you to shop for swords! This app includes: a form for inputing your shipping details (includes required fields), a dropdown containing the available items for sale
-                                + quantity indication and order details displaying your shipping info, sub-total, applicable taxes and grand total. You are able to delete items from the order details and the price gets updated.
-                    </p>
-                            <a style={{ borderBottom: "1px solid", fontSize: "1.4vw" }}>
-                            </a>
-                        </Col>
-                    </Row>
-                    <br />
-
                 </div>
             </Element>
 
